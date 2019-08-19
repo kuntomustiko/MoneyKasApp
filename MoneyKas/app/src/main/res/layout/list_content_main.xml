@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_transaksi_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/text_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100.000"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/text_keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/text_status"
+            android:text="Membeli pulsa"/>
+
+        <TextView
+            android:id="@+id/text_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="KELUAR"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="20 Feb 2017"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:id="@+id/text_tanggal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>
